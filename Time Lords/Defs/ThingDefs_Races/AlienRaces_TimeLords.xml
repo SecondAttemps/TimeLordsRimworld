@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+   <defName>Time Lords</defName>
+   <label>time lord</label>
+   <description>A Time Lord, one of the oldest races in the universe. While outwardly human, their apperence belies remarkable differences from humanity.</description>
+   <alienRace>
+       <generalSettings>
+	   
+	   <pawnsSpecificBackstories>true</pawnsSpecificBackstories>
+	   
+	   <ForcedRaceTraitEntries>
+	     <li>
+		 <defName>PsychicSensitivity</defName>
+		 <degree>-2</degree>
+		 <chance>100</chance>
+		 </li>
+		 
+		 <li>
+		 <defName>TooSmart</defName>
+		 <chance>100</chance>
+		 </li>
+		 
+		 <li>
+		 <defName>SuperImmune</defName>
+		 <chance>100</chance>
+		 </li>
+		</ForcedRaceTraitEntries>
+	   
+	   <humanRecipieImport>true</humanRecipieImport>
+	   
+	   <alienPartGenerator>
+	    <aliencrowntypes>
+		 <li>Average_Normal</li>
+	    </aliencrowntypes>
+		<useGenderedHeads>true</useGenderedHeads>
+		<useGenderedBodies>false</useGenderedBodies>
+	   </alienPartGenerator>
+	   
+	   </generalSettings>
+	   <graphicPaths>
+	   
+	   </graphicPaths>
+	   <hairSettings>
+	    
+		<HasHair>true</HasHair>
+		<GetsGreyAt>350</GetsGreyAt>
+		
+	   </hairSettings>
+	   <pawnKindSettings>
+	    
+		<PawnKindDef>
+		    <defName>TimeLords</defName>
+			<label>time lord</label>
+			<race>TimeLord</race>
+			<backstoryCategory>TimeLordBackstory</backstoryCategory>
+		</PawnKindDef>
+		
+		<alienslavekinds>
+		 <li>
+		     <kindDefs>
+			    <li>TimeLords</li>
+			 </kindDefs>
+			 <chance>0.025</chance>
+	     </li>
+		</alienslavekinds>
+		
+		<alienrefugeekinds>
+		   <li>
+		       <kindDefs>
+			      <li>TimeLords</li>
+			   </kindDefs>
+			   <chance>4</chance>
+			</li>
+		</alienrefugeekinds>
+		
+		<startingColonists>
+		   <li>
+		       <pawnKindEntries>
+			     <li>
+				   <kindDefs>
+				      <li>TimeLords</li>
+					</kindDefs>
+					<chance>8</chance>
+				  </li>
+				</pawnKindEntries>
+				<factionDefs>
+				  <li>PlayerColony</li>
+				 </factionDefs>
+		    </li>
+		</startingColonists>
+		
+		<alienwanderkinds>
+		  <li>
+		    <pawnKindEntries>
+			  <li>
+			     <kindDefs>
+				      <li>TimeLords</li>
+					</kindDefs>
+					<chance>2</chance>
+				  </li>
+				</pawnKindEntries>
+				<factionDefs>
+				  <li>PlayerColony</li>
+				 </factionDefs>
+		    </li>
+		</alienwanderkinds>
+		
+	   </pawnKindSettings>
+	   <thoughtSettings>
+	   
+	   
+	   
+	   </thoughtSettings>
+	   <relationSettings>
+	   
+	   <relationChanceModifierLover>1</relationChanceModifierLover>
+       <relationChanceModifierExLover>1</relationChanceModifierExLover>
+
+       <relationChanceModifierFiance>1</relationChanceModifierFiance>
+       <relationChanceModifierSpouse>1</relationChanceModifierSpouse>
+       <relationChanceModifierExSpouse>1</relationChanceModifierExSpouse>
+
+       <relationChanceModifierParent>1</relationChanceModifierParent>
+       <relationChanceModifierChild>1</relationChanceModifierChild>
+       <relationChanceModifierSibling>1</relationChanceModifierSibling>
+	   
+	   <renamer>
+	     <li>
+		  <relation>Child</relation>
+		  <label>Offspring</label>
+		  <femaleLabel>Offspring</label>
+		 </li>
+		</renamer>
+	   
+	   </relationSettings>
+	   <raceRestriction>
+	   
+	   </raceRestriction>
+	  </alienRace>
+</AlienRace.ThingDef_AlienRace>
+
+</Defs>
