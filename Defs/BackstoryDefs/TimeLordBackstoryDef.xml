@@ -25,10 +25,6 @@
 	  <amount>3</amount>
 	</li>
 	<li>
-	  <defName>Animals</defName>
-	  <amount>3</amount>
-	</li>
-	<li>
 	  <defName>Medicine</defName>
 	  <amount>3</amount>
 	</li>
@@ -37,15 +33,7 @@
 	  <amount>3</amount>
 	</li>
 	<li>
-	  <defName>Construction</defName>
-	  <amount>3</amount>
-	</li>
-	<li>
 	  <defName>Growing</defName>
-	  <amount>3</amount>
-	</li>
-	<li>
-	  <defName>Mining</defName>
 	  <amount>3</amount>
 	</li>
 	<li>
@@ -151,7 +139,7 @@
 	  <li>Violent</li>
 	</workDisables>
 	<bioAgeRange>
-	  <min>125</min>
+	  <min>200</min>
 	</bioAgeRange>
 	</AlienRace.BackstoryDef>
 	
@@ -192,15 +180,7 @@
 	  <amount>4</amount>
 	</li>
 	<li>
-	  <defName>Construction</defName>
-	  <amount>3</amount>
-	</li>
-	<li>
 	  <defName>Growing</defName>
-	  <amount>3</amount>
-	</li>
-	<li>
-	  <defName>Mining</defName>
 	  <amount>3</amount>
 	</li>
 	<li>
@@ -216,21 +196,21 @@
 	  <amount>5</amount>
 	</li>
    </skillGains>
-  <forcedTraits>
-   <li>
-    <defName>FastLearner</defName>
-    <chance>100</chance>
-   </li>
-   <li>
-    <defName>Kind</defName>
-	<chance>100</chance>
-   </li>
-   <li>
-    <defName>Nerves</defName>
-	<degree>2</degree>
-	<chance>80</chance>
-   </li>
-  </forcedTraits>
+   <forcedTraits>
+    <li>
+     <defName>FastLearner</defName>
+     <chance>100</chance>
+    </li>
+    <li>
+     <defName>Kind</defName>
+	 <chance>100</chance>
+    </li>
+    <li>
+     <defName>Nerves</defName>
+	 <degree>2</degree>
+	 <chance>80</chance>
+    </li>
+   </forcedTraits>
   </AlienRace.BackstoryDef>
   
   <AlienRace.BackstoryDef>
@@ -253,4 +233,64 @@
 	 </li>
 	</skillGains>
   </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef>
+    <defName>Infantry</defName>
+    <title>Infantry Soldier of the Time Lord army</title>
+	<titleshort>Infantry Soldier</titleshort>
+    <baseDescription>A infantry soldier in the army of the Time Lords, at the front lines of the sparse conflicts Time Lords become part of</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <spawnCategories>TimeLordBackstory</spawnCategories>
+   <skillGains>
+     <li>
+       <defName>Shooting</defName>
+       <amount>4</amount>
+     </li>
+     <li>
+       <defName>Melee</defName>
+	   <amount>2</amount>
+     </li>
+    </skillGains>
+    <forcedTraits>
+      <li>
+        <defName>ShootingAccuracy</defName>
+        <degree>1</degree>
+        <chance>65</chance>
+      </li>
+      <li>
+        <defName>ShootingAccuracy</defName>
+        <degree>-1</degree>	
+        <chance>35</chance>
+      </li>
+	</forcedTraits>
+	 <bioAgeRange>
+	   <min>120</min>
+	 </bioAgeRange>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef>
+     <defName>ConstructionWorker</defName>
+	 <title>Time Lord Architect</title>
+	 <titleshort>Architect</titleshort>
+	 <baseDescription>Even the Time Lords need buildings to work, sleep and live in as well as plans for the base interiors of TT Capsules. Architects filled this vital role in Time Lord Society</baseDescription>
+	 <bodyTypeMale>Male</bodyTypeMale>
+     <bodyTypeFemale>Female</bodyTypeFemale>
+     <slot>Adulthood</slot>
+	 <spawnCategories>TimeLordBackstory</spawnCategories>
+	<skillGains>
+	  <li>
+        <defName>Construction></defName>
+        <amount>5</amount>
+      </li>
+      <li>
+	    <defName>Mining</defName>
+		<amount>3</amount>
+	  </li>
+      <li>
+	    <defName>Crafting</defName>
+		<amount>4</amount>
+	  </li>
+	</skillGains>
 </Defs>
