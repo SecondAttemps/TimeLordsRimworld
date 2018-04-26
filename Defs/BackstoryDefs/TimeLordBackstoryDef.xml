@@ -61,7 +61,7 @@
    <defName>TimeLordExile</defName>
    <title>Exiled Time Lord</title>
    <titleshort>Exile</titleshort>
-   <baseDescription>Exiled for Deeds considered criminal and barbaric, NAME has been forced to leave their home</baseDescription>
+   <baseDescription>Exiled for Deeds considered criminal and barbaric, NAME has been forced to leave their home for fear of execution</baseDescription>
    <bodyTypeMale>Male</bodyTypeMale>
    <bodyTypeFemale>Female</bodyTypeFemale>
    <slot>Adulthood</slot>
@@ -160,14 +160,6 @@
 	  <amount>4</amount>
 	</li>
 	<li>
-	  <defName>Shooting</defName>
-	  <amount>2</amount>
-	</li>
-	<li>
-	  <defName>Melee</defName>
-	  <amount>2</amount>
-	</li>
-	<li>
 	  <defName>Animals</defName>
 	  <amount>4</amount>
 	</li>
@@ -231,6 +223,10 @@
 	   <defName>Social</defName>
 	   <amount>2</amount>
 	 </li>
+	 <li>
+	  <defName>Intellectual</defName>
+	  <amount>5</amount>
+	</li>
 	</skillGains>
   </AlienRace.BackstoryDef>
   
@@ -250,8 +246,12 @@
      </li>
      <li>
        <defName>Melee</defName>
-	   <amount>2</amount>
+	   <amount>3</amount>
      </li>
+	 <li>
+	  <defName>Intellectual</defName>
+	  <amount>5</amount>
+	</li>
     </skillGains>
     <forcedTraits>
       <li>
@@ -280,17 +280,126 @@
      <slot>Adulthood</slot>
 	 <spawnCategories>TimeLordBackstory</spawnCategories>
 	<skillGains>
-	  <li>
-        <defName>Construction></defName>
-        <amount>5</amount>
-      </li>
-      <li>
-	    <defName>Mining</defName>
-		<amount>3</amount>
-	  </li>
-      <li>
-	    <defName>Crafting</defName>
-		<amount>4</amount>
-	  </li>
+	 <li>
+       <defName>Construction></defName>
+       <amount>5</amount>
+     </li>
+     <li>
+	   <defName>Mining</defName>
+	   <amount>3</amount>
+	 </li>
+     <li>
+	   <defName>Crafting</defName>
+	   <amount>4</amount>
+	 </li>
+	 <li>
+	  <defName>Intellectual</defName>
+	  <amount>5</amount>
+	</li>
 	</skillGains>
+	<disallowedTraits>
+	  <li>
+	     <defName>Industriousness</defName>
+	     <degree>-2</degree>
+	  </li>
+	</disallowedTraits>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef>
+      <defName>ManualLabour</defName>
+	  <title>Labour Worker</title>
+	  <titleshort>Labourer</titleshort>
+	  <baseDescription>While not the most prestigious form of work, there were a select few Time Lords who dedicated themselves to manual labour and animal rearing beliving that doing so would make them better as a whole</baseDescription>
+      <bodyTypeMale>Male</bodyTypeMale>
+	  <bodyTypeFemale>Female</bodyTypeFemale>
+	  <slot>Adulthood</slot>
+	  <spawnCategories>TimeLordBackstory</spawnCategories>
+	 <skillGains>
+	   <li>
+	    <defName>Intellectual</defName>
+	    <amount>5</amount>
+	   </li>
+	   <li>
+	     <defName>Mining</defName>
+		 <amount>5</amount>
+	    </li>
+		<li>
+		  <defName>Animals</defName>
+		  <amount>3</amount>
+		</li>
+	 </skillGains>
+	 <forcedTraits>
+	   <li>
+	     <defName>Industriousness</defName>
+		 <degree>2</degree>
+		 <chance>20</chance>
+	   </li>
+	   <li>
+	     <defName>Industriousness</defName>
+		 <degree>1</degree>
+		 <chance>80</chance>
+	   </li>
+	 </forcedTraits>
+	 <disallowedTraits>
+	  <li>
+	     <defName>Industriousness</defName>
+		 <degree>-2</degree>
+	   </li>
+	   <li>
+	     <defName>Industriousness</defName>
+		 <degree>-1</degree>
+	   </li>
+	 </disallowedTraits>
+   </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef>
+     <defName>Sniper</defName>
+	 <title>Sharpshooter</title>
+	 <titleshort>Sniper</title>
+	 <baseDescription>NAME enlisted into the military side of the accademy at a young age. There NAME learnt how to shoot decently,and shoot far</baseDescription>
+	 <bodyTypeMale>Male</bodyTypeMale>
+	 <bodyTypeFemale>Female</bodyTypeFemale>
+	 <slot>Adulthood</slot>
+	 <spawnCategories>TimeLordBackstory</spawnCategories>
+	  <skillGains>
+	    <li>
+		  <defName>Shooting</defName>
+		  <amount>6</defName>
+		</li>
+	  </skillGains>
+	  <forcedTraits>
+	    <li>
+		  <defName>ShootingAccuracy</defName>
+		  <degree>1</degree>
+		  <chance>75</chance>
+		</li>
+	  </forcedTraits>
+	  <bioAgeRange>
+	    <min>160</min>
+	  </bioAgeRange>
+	</AlienRace.BackstoryDef>
+   
+   <AlienRace.BackstoryDef>
+    <defName>Fighter</defName>
+	<title>Melee Specialist</title>
+	<titleshort>Fighter</titleshort>
+	<baseDescription>From a early age, NAME showed an interest in physical conflict more than scholerly persuits. It was only natural then that they ended up enlisting as a close range melee fighter in the army</baseDescription>
+	<bodyTypeGlobal>Hulk</bodyTypeGlobal>
+	<slot>Adulthood</slot>
+	<spawnCategories>TimeLordBackstory</spawnCategories>
+	  <skillGains>
+	    <li>
+		 <defName>Melee</defName>
+		 <amount>3</amount>
+		</li>
+	  </skillGains>
+	  <forcedTraits>
+	    <li>
+		  <defName>Brawler</defName>
+		  <chance>100</chance>
+		</li>
+	  </forcedTraits>
+   </AlienRace.BackstoryDef>
+   
+   
 </Defs>
