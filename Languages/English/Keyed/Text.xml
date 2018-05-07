@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<ColonistWillRegenerateLabel>A colonist will regenerate</ColonistWillRegenerateLabel>
+	<ColonistWillRegenerate>{0} will regenerate shortly.</ColonistWillRegenerate>
+	
+	<ColonistHasRegeneratedLabel>A colonist has regenerated</ColonistHasRegeneratedLabel>
+	<ColonistHasRegenerated>{0} has regenerated, and is suffering from Post-Regenerative Trauma.</ColonistHasRegenerated>
+
+</LanguageData>
