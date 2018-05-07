@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
+   <!-- Adult Backstories -->
+
   <AlienRace.BackstoryDef>
   <defName>TimeLordRenegade</defName>
   <title>Renegade Time Lord</title>
@@ -55,6 +58,9 @@
     <chance>100</chance>
    </li>
   </forcedTraits> 
+  <forcedHediffs>
+      <li>regenAbility</li>
+  </forcedHediffs>
  </AlienRace.BackstoryDef>
  
   <AlienRace.BackstoryDef>
@@ -96,6 +102,9 @@
 	   <chance>20</chance>
 	 </li>
    </forcedTraits>
+   <forcedHediffs>
+      <li>regenAbility</li>
+   </forcedHediffs>
  </AlienRace.BackstoryDef>
  
   <AlienRace.BackstoryDef>
@@ -112,7 +121,7 @@
    <skillGains>
      <li>
 	   <defName>Intellectual</defName>
-	   <amount>7</amount>
+	   <amount>4</amount>
 	 </li>
 	 <li>
 	   <defName>Medicine</defName>
@@ -139,9 +148,15 @@
 	  <li>Violent</li>
 	</workDisables>
 	<bioAgeRange>
-	  <min>200</min>
+	  <min>300</min>
 	</bioAgeRange>
-	</AlienRace.BackstoryDef>
+	<chronoAgeRange>
+	 <min>300</min>
+	</chronoAgeRange>
+	<forcedHediffs>
+      <li>regenAbility</li>
+    </forcedHediffs>
+   </AlienRace.BackstoryDef>
 	
   <AlienRace.BackstoryDef>
     <defName>HeroOfTime</defName>
@@ -203,6 +218,9 @@
 	 <chance>80</chance>
     </li>
    </forcedTraits>
+   <forcedHediffs>
+      <li>regenAbility</li>
+   </forcedHediffs>
   </AlienRace.BackstoryDef>
   
   <AlienRace.BackstoryDef>
@@ -213,7 +231,11 @@
 	<bodyTypeMale>Male</bodyTypeMale>
     <bodyTypeFemale>Female</bodyTypeFemale>
    <slot>Adulthood</slot>
-   <spawnCategories>TimeLordBackstory</spawnCategories>
+   <spawnCategories>
+	  <li>
+	      TimeLordBackstory
+	  </li>
+	</spawnCategories>
    <skillGains>
      <li>
 	   <defName>Medicine</defName>
@@ -228,6 +250,9 @@
 	  <amount>5</amount>
 	</li>
 	</skillGains>
+	<forcedHediffs>
+      <li>regenAbility</li>
+    </forcedHediffs>
   </AlienRace.BackstoryDef>
   
   <AlienRace.BackstoryDef>
@@ -238,7 +263,11 @@
     <bodyTypeMale>Male</bodyTypeMale>
     <bodyTypeFemale>Female</bodyTypeFemale>
     <slot>Adulthood</slot>
-    <spawnCategories>TimeLordBackstory</spawnCategories>
+   <spawnCategories>
+	  <li>
+	      TimeLordBackstory
+	  </li>
+	</spawnCategories>
    <skillGains>
      <li>
        <defName>Shooting</defName>
@@ -266,8 +295,14 @@
       </li>
 	</forcedTraits>
 	 <bioAgeRange>
-	   <min>120</min>
+	   <min>150</min>
 	 </bioAgeRange>
+	 <chronoAgeRange>
+	   <min>150</min>
+	 </chronoAgeRange>
+	 <forcedHediffs>
+      <li>regenAbility</li>
+     </forcedHediffs>
   </AlienRace.BackstoryDef>
   
   <AlienRace.BackstoryDef>
@@ -278,7 +313,11 @@
 	 <bodyTypeMale>Male</bodyTypeMale>
      <bodyTypeFemale>Female</bodyTypeFemale>
      <slot>Adulthood</slot>
-	 <spawnCategories>TimeLordBackstory</spawnCategories>
+	<spawnCategories>
+	  <li>
+	      TimeLordBackstory
+	  </li>
+	</spawnCategories>
 	<skillGains>
 	 <li>
        <defName>Construction></defName>
@@ -303,6 +342,9 @@
 	     <degree>-2</degree>
 	  </li>
 	</disallowedTraits>
+	<forcedHediffs>
+      <li>regenAbility</li>
+    </forcedHediffs>
   </AlienRace.BackstoryDef>
   
   <AlienRace.BackstoryDef>
@@ -313,7 +355,11 @@
       <bodyTypeMale>Male</bodyTypeMale>
 	  <bodyTypeFemale>Female</bodyTypeFemale>
 	  <slot>Adulthood</slot>
-	  <spawnCategories>TimeLordBackstory</spawnCategories>
+	 <spawnCategories>
+	  <li>
+	      TimeLordBackstory
+	  </li>
+	</spawnCategories>
 	 <skillGains>
 	   <li>
 	    <defName>Intellectual</defName>
@@ -350,6 +396,9 @@
 		 <degree>-1</degree>
 	   </li>
 	 </disallowedTraits>
+	 <forcedHediffs>
+      <li>regenAbility</li>
+     </forcedHediffs>
    </AlienRace.BackstoryDef>
   
   <AlienRace.BackstoryDef>
@@ -360,7 +409,11 @@
 	 <bodyTypeMale>Male</bodyTypeMale>
 	 <bodyTypeFemale>Female</bodyTypeFemale>
 	 <slot>Adulthood</slot>
-	 <spawnCategories>TimeLordBackstory</spawnCategories>
+	 <spawnCategories>
+	  <li>
+	      TimeLordBackstory
+	  </li>
+	</spawnCategories>
 	  <skillGains>
 	    <li>
 		  <defName>Shooting</defName>
@@ -377,16 +430,26 @@
 	  <bioAgeRange>
 	    <min>160</min>
 	  </bioAgeRange>
+	  <chronoAgeRange>
+	    <min>160</min>
+	  </chronoAgeRange>
+	 <forcedHediffs>
+      <li>regenAbility</li>
+     </forcedHediffs>
 	</AlienRace.BackstoryDef>
    
-   <AlienRace.BackstoryDef>
+  <AlienRace.BackstoryDef>
     <defName>Fighter</defName>
 	<title>Melee Specialist</title>
 	<titleshort>Fighter</titleshort>
 	<baseDescription>From a early age, NAME showed an interest in physical conflict more than scholerly persuits. It was only natural then that they ended up enlisting as a close range melee fighter in the army</baseDescription>
 	<bodyTypeGlobal>Hulk</bodyTypeGlobal>
 	<slot>Adulthood</slot>
-	<spawnCategories>TimeLordBackstory</spawnCategories>
+	<spawnCategories>
+	  <li>
+	      TimeLordBackstory
+	  </li>
+	</spawnCategories>
 	  <skillGains>
 	    <li>
 		 <defName>Melee</defName>
@@ -399,7 +462,131 @@
 		  <chance>100</chance>
 		</li>
 	  </forcedTraits>
+	  <bioAgeRange>
+	   <min>150</min>
+	  </bioAgeRange>
+	  <chronoAgeRange>
+	   <min>150</min>
+	  </chronoAgeRange>
+	  <forcedHediffs>
+        <li>regenAbility</li>
+      </forcedHediffs>
    </AlienRace.BackstoryDef>
    
-   
+  <AlienRace.BackstoryDef>
+    <defName>Negotiator</defName>
+	<title>Speaker of the Time Lord Council</title>
+	<titleshort>Speaker</titleshort>
+	<baseDescription>NAME at one point in their lives spoke to the people about the actions undertaken by the High Council of Gallifrey, having a natural way with words</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+	<spawnCategories>
+	  <li>
+	      TimeLordBackstory
+	  </li>
+	</spawnCategories>
+	  <skillGains>
+	    <li>
+		  <defName>Social</defName>
+		  <amount>4</amount>
+		</li>
+	  </skillGains>
+	  <disallowedTraits>
+	    <li>
+		  <defName>AnnoyingVoice</defName>
+		</li>  
+	  </disallowedTraits>
+	  <bioAgeRange>
+	    <min>200</min>
+	  </bioAgeRange>
+	  <chronoAgeRange>
+	    <min>200</min>
+	  </chronoAgeRange>
+	 <forcedHediffs>
+      <li>regenAbility</li>
+     </forcedHediffs>
+	</AlienRace.BackstoryDef>
+	
+  <AlienRace.BackstoryDef>
+	<defName>Survivor</defName>
+	<title>Vortex Survivor</title>
+	<titleshort>Survivor</titleshort>
+	<baseDescription>From a very early age NAME got lost inside the time vortex and was presumed dead. Over the past 250 years for them they have managed to survive in the harshest conditions, but their mental state has seen better days</baseDescription>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<slot>Adulthood</slot>
+    <spawnCategories>
+	  <li>
+	      TimeLordBackstory
+	  </li>
+	</spawnCategories>
+	<skillGains>
+	  <li>
+	    <defName>Intellectual</defName>
+		<amount>6</amount>
+	  </li>
+	  <li>
+	    <defName>Social</defName>
+		<amount>-10</defName>
+	  </li>
+	</skillGains>
+	<forcedTraits>
+	  <li>
+	    <defName>Abrasive</defName>
+	    <chance>100</chance>
+	  </li>
+	  <li>
+	    <defName>Neurotic</defName>
+		<degree>2</degree>
+		<chance>100</chance>
+	  </li>
+	 </forcedTraits>
+	 <bioAgeRange>
+	   <min>150</min>
+	 </bioAgeRange>
+	 <chronoAgeRange>
+	   <min>400</min>
+	 </chronoAgeRange>
+	 <workDisables>
+	  <li>Warden</li>
+	  <li>Doctor</li>
+	 </workDisables>
+	 <forcedHediffs>
+	   <li>regenAbility</li>
+	   <li>Regen01</li>
+	 </forcedHediffs>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef>
+    <defName>TimeLord_Engineer</defName>
+    <title>Temporal engineer</title>
+	<titleShort>Engineer</titleShort>
+    <baseDescription>NAME developed an interest in Dimensional, Temporal and Quantum Engineering. Lending their skills to the advanced science of Time Lord society, they spent their days in greased up overalls deep beneath the Capitol, hammering chunks of validium into shape.</baseDescription>
+    <slot>Adulthood</slot>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<maleCommonality>20</maleCommonality>
+	<femaleCommonality>20</femaleCommonality>
+    <spawnCategories>
+      <li>TimelordBackstory</li>
+    </spawnCategories>
+    <skillGains>
+	  <li>
+        <defName>Crafting</defName>
+        <amount>5</amount>
+      </li>
+	</skillGains>
+	<bioAgeRange>
+	  <min>220</min>
+	</bioAgeRange>
+	<chronoAgeRange>
+	  <min>220</min>
+	</chronoAgeRange>
+	<forcedHediffs>
+	  <li>regenAbility</li>
+    </forcedHediffs>
+ </AlienRace.BackstoryDef>
+  
+  
 </Defs>
