@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RulePackDef>
+    <defName>NamerPersonTimelordM</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[TimelordfirstM] [Timelordlast]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>TimelordfirstM</keyword>
+          <path>Timelord_Names/TimelordM</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>Timelordlast</keyword>
+          <path>Timelord_Names/Timelordlast</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>TimelordTitle</keyword>
+          <path>Timelord_Names/Concepts_Timelord</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>NamerPersonTimelordF</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[TimelordfirstF] [Timelordlast]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>TimelordfirstF</keyword>
+          <path>Timelord_Names/TimelordF</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>Timelordlast</keyword>
+          <path>Timelord_Names/Timelordlast</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>TimelordTitle</keyword>
+          <path>Timelord_Names/Concepts_Timelord</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

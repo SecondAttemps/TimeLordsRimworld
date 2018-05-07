@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ============================ Timelord Base ========================== -->
+
+  <PawnKindDef Name="TimelordBase" Abstract="True">
+    <defaultFactionType>TimelordFaction</defaultFactionType>
+    <race>Alien_Timelord</race>
+	<backstoryCategory>TimelordBackstory</backstoryCategory>
+    <baseRecruitDifficulty>0.60</baseRecruitDifficulty>
+    <apparelAllowHeadwearChance>0</apparelAllowHeadwearChance>
+	<apparelTags>
+      <li>Timelord</li>
+    </apparelTags>
+  </PawnKindDef>
+  
+  <!-- ============================ Timelord Civilian Base ========================== -->
+
+  <PawnKindDef Name="TimelordCivBase" ParentName="TimelordBase" Abstract="True">
+    <combatPower>25</combatPower>
+	<race>Alien_Timelord</race>
+    <itemQuality>Normal</itemQuality>
+    <isFighter>false</isFighter>
+    <gearHealthRange>
+      <min>0.2</min>
+      <max>2.0</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>300</min>
+      <max>900</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>0</min>
+      <max>250</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>Gun</li>
+      <li>Melee</li>
+    </weaponTags>
+    <techHediffsMoney>
+      <min>200</min>
+      <max>300</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+    </techHediffsTags>
+    <techHediffsChance>0.51</techHediffsChance>
+    <invNutrition>2.55</invNutrition>
+    <inventoryOptions>
+      <skipChance>0.75</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <choiceChance>90</choiceChance>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>25</min>
+            <max>70</max>
+          </countRange>
+        </li>
+        <li>
+          <choiceChance>10</choiceChance>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>700</min>
+            <max>1000</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  <!-- ============================ Timelord Civilians ========================== -->
+  
+  <PawnKindDef ParentName="TimelordCivBase">
+    <defName>TimelordColonist</defName>
+    <label>Time Lord colonist</label>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="TimelordCivBase">
+    <defName>TimelordTrader</defName>
+    <label>Time Lord trader</label>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="TimelordCivBase">
+    <defName>TimelordGuard</defName>
+    <label>Chancellery Guard</label>
+  </PawnKindDef>
+  
+</Defs>

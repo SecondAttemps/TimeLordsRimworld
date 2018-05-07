@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef>
+	<defName>TimelordFaction</defName>
+	<label>The Time Lords of Gallifrey</label>
+    <description>A colony of the ancient and powerful Time Lords of Gallifrey.</description>
+	<hidden>true</hidden>
+    <pawnsPlural>Time Lords</pawnsPlural>
+    <baseSelectionWeight>.75</baseSelectionWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <canMakeRandomly>true</canMakeRandomly>
+    <raidCommonality>100</raidCommonality>
+    <canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>Cardinal</leaderTitle>
+    <hairTags>
+      <li>Urban</li>
+    </hairTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Synthread</li>
+      </thingDefs>
+    </apparelStuffFilter>
+    <startingGoodwill>
+      <min>10</min>
+      <max>40</max>
+    </startingGoodwill>
+	<factionNameMaker>NamerFactionTribal</factionNameMaker>
+	<baseNameMaker>NamerFactionBaseTribal</baseNameMaker>
+	<techLevel>Ultra</techLevel>
+	<backstoryCategory>TimelordBackstory</backstoryCategory>
+    <naturalColonyGoodwill>
+      <min>-60</min>
+      <max>0</max>
+    </naturalColonyGoodwill>
+   <caravanTraderKinds>
+      <li>Caravan_Outlander_BulkGoods</li>
+      <li>Caravan_Outlander_CombatSupplier</li>
+      <li>Caravan_Outlander_Exotic</li>
+    </caravanTraderKinds>
+    <baseTraderKinds>
+      <li>Base_Outlander_Standard</li>
+    </baseTraderKinds>
+    <allowedArrivalTemperatureRange>
+      <min>-50</min>
+      <max>45</max>
+    </allowedArrivalTemperatureRange>
+    
+	<pawnGroupMakers>
+      <li>
+        <kindDef>Normal</kindDef>
+        <options>
+          <TimelordColonist>50</TimelordColonist>
+        </options>
+      </li>
+	  <li>
+      <kindDef>Trader</kindDef>
+        <traders>
+          <TimelordTrader>1</TimelordTrader>
+        </traders>
+        <carriers>
+          <Muffalo>2</Muffalo>
+          <Dromedary>2</Dromedary>
+        </carriers>
+        <guards>
+          <TimelordGuard>90</TimelordGuard>
+        </guards>
+      </li>
+	  <li>
+        <kindDef>FactionBase</kindDef>
+        <options>
+          <TimelordColonist>50</TimelordColonist>
+          <TimelordGuard>90</TimelordGuard>
+        </options>
+      </li>
+    </pawnGroupMakers>
+	
+    <homeIconPath>World/TimelordBaseIcon</homeIconPath>
+	<expandingIconTexture>World/TimelordBaseIcon</expandingIconTexture>
+  </FactionDef>
+
+</Defs>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ScenarioDef>
+	<defName>TimelordScenariox</defName>
+		<label>The Exile</label>
+		<description>You have been exiled to an unknown world on the edges of a distant Galaxy for a crime you cannot remember. With no TARDIS, and no technology at your disposal, you must survive the harsh elements and indigenous population if you wish to survive...</description>
+<scenario>
+<summary>1 Exiled Time Lord</summary>
+		<playerFaction>
+			<def>PlayerFaction</def>
+			<factionDef>TimelordPlayerColony</factionDef>
+		</playerFaction>
+		<parts>
+			<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+				<def>ConfigPage_ConfigureStartingPawns</def>
+				<pawnCount>1</pawnCount>
+			</li>
+			<li Class="ScenPart_PlayerPawnsArriveMethod">
+				<def>PlayerPawnsArriveMethod</def>
+			</li>
+			<li Class="ScenPart_GameStartDialog">
+				<def>GameStartDialog</def>
+				<text> You awaken, both hearts beating rapidly. The disorientation from the Time Scoop has left you reeling, but you gather your senses and look around. You're alone, separated from your people in a different time. </text>
+				<closeSound>GameStartSting</closeSound>
+			</li>
+		</parts>
+		</scenario>
+	</ScenarioDef>
+</Defs>

@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef Name="TLcanRegen" Abstract="True">
+		<hediffClass>TimeLord.canRegenerateHediff</hediffClass>
+		<defaultLabelColor>(255,208,81)</defaultLabelColor>
+	</HediffDef>
+	
+	<HediffDef Name="TLRegenerate" Abstract="True">
+		<hediffClass>TimeLord.RegeneratingHediff</hediffClass>
+		<defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
+	</HediffDef>
+	
+	<HediffDef ParentName="TLcanRegen">
+		<defName>regenAbility</defName>
+		<label>Time Lord DNA</label>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Breathing</capacity>
+						<setMax>2.0</setMax>
+						<offset>2.0</offset>
+					</li>
+					<li>
+						<capacity>Metabolism</capacity>
+						<setMax>5.0</setMax>
+						<offset>5.0</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>	
+	</HediffDef>
+	
+	<!-- Regeneration Tracker -->
+	
+	<HediffDef ParentName="TLcanRegen">
+		<defName>Regen01</defName>
+		<label>1st Regeneration</label>
+	</HediffDef>
+
+	<HediffDef ParentName="TLcanRegen">
+		<defName>Regen02</defName>
+		<label>2nd Regeneration</label>
+	</HediffDef>	
+	
+	<HediffDef ParentName="TLcanRegen">
+		<defName>Regen03</defName>
+		<label>3rd Regeneration</label>
+	</HediffDef>
+	
+	<HediffDef ParentName="TLcanRegen">
+		<defName>Regen04</defName>
+		<label>4th Regeneration</label>
+	</HediffDef>
+	
+	<HediffDef ParentName="TLcanRegen">
+		<defName>Regen05</defName>
+		<label>5th Regeneration</label>
+	</HediffDef>
+	
+	<HediffDef ParentName="TLcanRegen">
+		<defName>Regen06</defName>
+		<label>6th Regeneration</label>
+	</HediffDef>
+	
+	<HediffDef ParentName="TLcanRegen">
+		<defName>Regen07</defName>
+		<label>7th Regeneration</label>
+	</HediffDef>
+
+	<HediffDef ParentName="TLcanRegen">
+		<defName>Regen08</defName>
+		<label>8th Regeneration</label>
+	</HediffDef>	
+	
+	<HediffDef ParentName="TLcanRegen">
+		<defName>Regen09</defName>
+		<label>9th Regeneration</label>
+	</HediffDef>
+	
+	<HediffDef ParentName="TLcanRegen">
+		<defName>Regen10</defName>
+		<label>10th Regeneration</label>
+	</HediffDef>
+	
+	<HediffDef ParentName="TLcanRegen">
+		<defName>Regen11</defName>
+		<label>11th Regeneration</label>
+	</HediffDef>
+	
+	<HediffDef ParentName="TLcanRegen">
+		<defName>Regen12</defName>
+		<label>Final Regeneration</label>
+	</HediffDef>
+
+	<!-- Dynamic -->
+	
+	<HediffDef ParentName="TLRegenerate">
+		<defName>Regenerating</defName>
+		<label>Regeneration Process</label>
+	</HediffDef>
+
+	<HediffDef ParentName="TLcanRegen">
+		<defName>RegenTrauma</defName>
+		<label>Post-Regenerative Trauma</label>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.2</setMax>
+					</li>
+					<li>
+						<capacity>Eating</capacity>
+						<setMax>2.0</setMax>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+		<li Class="HediffCompProperties_Disappears">
+			<disappearsAfterTicks>60000</disappearsAfterTicks>
+		</li>
+		</comps>
+	</HediffDef>
+
+</Defs>

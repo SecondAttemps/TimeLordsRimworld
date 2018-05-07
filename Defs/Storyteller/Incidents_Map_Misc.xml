@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<IncidentDef>
+		<defName>TardisCrash</defName>
+		<label>TARDIS crash</label>
+		<category>Misc</category>
+		<targetType>MapPlayerHome</targetType>
+		<workerClass>Tardis.Incident_TardisCrash</workerClass>
+		<baseChance>1.5</baseChance>
+		<populationEffect>Increase</populationEffect>
+	</IncidentDef>
+
+</Defs>

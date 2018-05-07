@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThoughtDef>
+    <defName>willRegenerate01</defName>
+    <durationDays>0.1</durationDays>
+    <stackLimit>4</stackLimit>
+    <stackedEffectMultiplier>0.4</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>I'm going to regenerate</label>
+        <description>It's the end, but the moment has been prepared for.</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>willRegenerate02</defName>
+    <durationDays>0.1</durationDays>
+    <stackLimit>4</stackLimit>
+    <stackedEffectMultiplier>0.4</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>I'm going to regenerate</label>
+        <description>I don't want to go.</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>willRegenerate03</defName>
+    <durationDays>0.1</durationDays>
+    <stackLimit>4</stackLimit>
+    <stackedEffectMultiplier>0.4</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>I'm going to regenerate</label>
+        <description>Is this death?</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>hasRegenerated01</defName>
+    <durationDays>0.1</durationDays>
+    <stackLimit>4</stackLimit>
+    <stackedEffectMultiplier>0.4</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>I Regenerated</label>
+        <description>Legs, I've still got legs!</description>
+        <baseMoodEffect>15</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>hasRegenerated02</defName>
+    <durationDays>0.1</durationDays>
+    <stackLimit>4</stackLimit>
+    <stackedEffectMultiplier>0.4</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>I Regenerated</label>
+        <description>Sontarans perverting the course of human history!</description>
+        <baseMoodEffect>15</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+    <ThoughtDef>
+    <defName>hasRegenerated03</defName>
+    <durationDays>0.1</durationDays>
+    <stackLimit>4</stackLimit>
+    <stackedEffectMultiplier>0.4</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>I Regenerated</label>
+        <description>That's weird, new teeth.</description>
+        <baseMoodEffect>15</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+   <ThoughtDef>
+    <defName>pawnHasRegenerated</defName>
+    <thoughtClass>Thought_Tale</thoughtClass>
+    <workerClass>ThoughtWorker_Tale</workerClass>
+    <taleDef>colonistRegenerated</taleDef>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>Someone I know has regenerated. I don't know if I trust them yet.</label>
+        <baseOpinionOffset>-10</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

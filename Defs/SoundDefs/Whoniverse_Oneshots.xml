@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?><DefPackage-SoundDef>
+
+  <SoundDef>
+    <defName>Whoniverse_tardisLandSFX</defName>  
+    <context>Any</context>
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+	<subSounds>
+	<li>
+		<onCamera>True</onCamera>
+		<grains>
+			<li Class="AudioGrain_Clip">
+				<clipPath>OneShots/tardisLand</clipPath>
+			</li>
+		</grains>      
+	</li>
+</subSounds>
+  </SoundDef>
+
+</DefPackage-SoundDef>

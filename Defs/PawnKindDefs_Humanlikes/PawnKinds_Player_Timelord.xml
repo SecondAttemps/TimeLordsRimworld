@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PawnKindDef Abstract="True" Name="BaseTimelordPawnKind">
+    <race>Alien_Timelord</race>
+    <combatPower>20</combatPower>
+    <baseRecruitDifficulty>0.50</baseRecruitDifficulty>
+    <isFighter>false</isFighter>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <forceNormalGearQuality>true</forceNormalGearQuality>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BaseTimelordPawnKind">
+    <defName>Timelord</defName>
+    <label>Time Lord colonist</label>
+    <defaultFactionType>TimelordPlayerColony</defaultFactionType>
+    <backstoryCategory>TimelordBackstory</backstoryCategory>
+    <apparelTags>
+      <li>Timelord</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>1000</min>
+      <max>10000</max>
+    </apparelMoney>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+  </PawnKindDef>
+
+</Defs>

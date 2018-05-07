@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <TaleDef>
+    <defName>colonistRegenerated</defName>
+    <label>a colonist has regenerated</label>
+    <taleClass>Tale_SinglePawn</taleClass>
+    <type>Expirable</type>
+    <usableForArt>false</usableForArt>
+    <maxPerPawn>1</maxPerPawn>
+    <expireDays>1</expireDays>
+  </TaleDef>
+
+
+
+</Defs>
