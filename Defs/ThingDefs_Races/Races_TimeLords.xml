@@ -7,12 +7,28 @@
     <description>A Time Lord, one of the oldest races in the universe. While outwardly human, their apperence belies remarkable differences from humanity.</description>
     <statBases>
       <MarketValue>4000</MarketValue>
-      <MoveSpeed>4.61</MoveSpeed>
-      <Flammability>1.0</Flammability>
+      <MoveSpeed>6.42</MoveSpeed>
+      <Flammability>0.5</Flammability>
       <ComfyTemperatureMin>-30</ComfyTemperatureMin>
       <ComfyTemperatureMax>60</ComfyTemperatureMax>
       <LeatherAmount>25</LeatherAmount>
     </statBases>
+	<verbs>
+      <li>
+        <verbClass>Verb_MeleeAttack</verbClass>
+        <defaultCooldownTime>1.45</defaultCooldownTime>
+        <meleeDamageBaseAmount>10</meleeDamageBaseAmount>
+        <meleeDamageDef>Blunt</meleeDamageDef>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <verbClass>Verb_MeleeAttack</verbClass>
+        <defaultCooldownTime>1.45</defaultCooldownTime>
+        <meleeDamageBaseAmount>15</meleeDamageBaseAmount>
+        <meleeDamageDef>Blunt</meleeDamageDef>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+      </li>
+    </verbs>
     <tools>
       <li>
         <label>left fist</label>
@@ -66,43 +82,40 @@
       <makesFootprints>true</makesFootprints>
       <lifeExpectancy>400</lifeExpectancy>
       <leatherColor>(211,194,143)</leatherColor>
-      <leatherCommonalityFactor>0.01</leatherCommonalityFactor>
+      <leatherCommonalityFactor>0.001</leatherCommonalityFactor>
       <leatherInsulation>0.70</leatherInsulation>
-      <leatherMarketValueFactor>2</leatherMarketValueFactor>
-      <nameCategory>HumanStandard</nameCategory>
-      <body>Human</body>
-      <baseBodySize>1</baseBodySize>
+      <leatherMarketValueFactor>3</leatherMarketValueFactor>
+	  <nameGenerator>NamerPersonTimelordM</nameGenerator>
+      <nameGeneratorFemale>NamerPersonTimelordF</nameGeneratorFemale>
+      <body>Timelord_body</body>
+      <baseBodySize>1.25</baseBodySize>
       <baseHealthScale>1</baseHealthScale>
       <foodType>OmnivoreHuman</foodType>
       <gestationPeriodDays>45</gestationPeriodDays>
-      <litterSizeCurve>
-        <points>
-          <li>(0.5, 0)</li>
-          <li>(1, 1)</li>
-          <li>(1.01, 0.02)</li>
-          <li>(3.5, 0)</li>
-        </points>
-      </litterSizeCurve>
-      <lifeStageAges>
+	  <lifeStageAges>
         <li>
-          <def>HumanlikeBaby</def>
+          <def>BabyTimelordStage</def>
           <minAge>0</minAge>
         </li>
         <li>
-          <def>HumanlikeToddler</def>
-          <minAge>1.2</minAge>
+          <def>ChildTimelordStage</def>
+          <minAge>50</minAge>
+        </li>
+		<li>
+          <def>TeenTimelordStage</def>
+          <minAge>100</minAge>
         </li>
         <li>
-          <def>HumanlikeChild</def>
-          <minAge>4</minAge>
+          <def>AdultTimelordStage</def>
+          <minAge>150</minAge>
         </li>
         <li>
-          <def>HumanlikeTeenager</def>
-          <minAge>13</minAge>
+          <def>ElderTimelordStage</def>
+          <minAge>5000</minAge>
         </li>
         <li>
-          <def>HumanlikeAdult</def>
-          <minAge>18</minAge>
+          <def>AncestorTimelordStage</def>
+          <minAge>10000</minAge>
         </li>
       </lifeStageAges>
       <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
@@ -140,15 +153,9 @@
       <li>InstallDenture</li>
       <li>InstallJoywire</li>
       <li>InstallPainstopper</li>
-      <li>InstallNaturalHeart</li>
-      <li>InstallNaturalLung</li>
-      <li>InstallNaturalKidney</li>
-      <li>InstallNaturalLiver</li>
       <li>ExciseCarcinoma</li>
-      <li>AdministerMechSerumHealer</li>
       <li>RemoveBodyPart</li>
       <li>Euthanize</li>
-      <li>Anesthetize</li>
     </recipes>
   </ThingDef>
 
