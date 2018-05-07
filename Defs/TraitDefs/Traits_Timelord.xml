@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <TraitDef>
+    <defName>TelepathicAmnesia</defName>
+    <commonality>0.1</commonality>
+    <degreeDatas>
+      <li>
+        <label>telepathic amnesia</label>
+        <description>NAME has had their mind robbed of all knowledge of Time Travel. Perhaps there is a way to get it back...</description>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+  
+</Defs>
